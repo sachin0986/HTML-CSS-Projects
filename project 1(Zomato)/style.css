@@ -5,10 +5,11 @@
 
 body{
   font-family: 'Merriweather', serif;
-  background-color: #F9FaFc;
+  background-color: #ebf2ff;
 }
 .navbar
 {
+  background-color: #F9FaFc;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -23,7 +24,13 @@ body{
   width: 100px;
 }
 
-.nav__item
+.h1_text{
+  font-size: 30px;
+  margin: 20px 0px;
+  color: #1d3557;
+  font-weight: 800;
+}
+.button_primary
 {
   background-image: linear-gradient(
     to right,
@@ -39,27 +46,141 @@ body{
 
 }
 
+.container
+{
+  max-width: 100%;
+  padding: 20px;
+margin: 0 auto;
+
+}
+.s1_division
+{
+    width: 100%;
+}
+
+.hero_image
+{
+  border-radius: 8px;
+  width:100%;
+  box-shadow: 0 25px 50px -12px rgba(0 0 0 / 25%);
+}
+.food_card_description
+{
+  padding: 15px;
+}
+.food_card
+{
+  background-color: #F9F9F9;
+}
+
+.food_card_image
+{
+  width: 100%;
+}
+.food_image
+{
+  width:100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.menu_text
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1d3557;
+
+}
 @media (min-width: 768px)
 {
+  .explore_menu
+  {
+    position: relative;
+  }
+  .explore_menu_bg
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+      );
+
+      z-index: -3;
+      transform: skewY(-5deg);
+
+  }
+  .explore_menu_list
+  {
+    display: flex;
+    gap:15px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  #pizza_card
+  {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
   .navbar{
     justify-content: space-between;
     padding: 10px 30px;
 
   }
+
+  .section1
+  {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px)
 {
+  .explore_menu_list
+  {
+    gap:25px;
+  }
+  .container
+  {
+    max-width: 70%;
+  }
   .navbar__brand{
     width: 150px;
   }
-  .nav__item{
+.button_primary{
     padding: 20px;
     font-size: 20px;
   }
+
+  .description{
+    width: 100%;
+  }
+
+  .h1_text{
+    font-size: 44px;
+  }
+
+  .menu_text
+  {
+    font-size: 45px;
+  }
 }
 
-.nav__item:hover
+.button_primary:hover
 {
   border: 2px solid #FF6767;
   cursor: pointer;
