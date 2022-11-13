@@ -13,6 +13,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  box-shadow: 0 0 50px 0 rgba(0 0 0 / 25%);
 
 }
 .navbar__brand
@@ -83,6 +84,39 @@ margin: 0 auto;
   border-radius: 8px 8px 0 0;
 }
 
+.footer_logo
+{
+  width: 200px;
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+.footer_img
+{
+  width: 200px;;
+}
+.footer_description
+{
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+}
+.footer_bar
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 15px 15px 0 0;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+}
+
+
 .menu_text
 {
   margin-top: 30px;
@@ -95,6 +129,25 @@ margin: 0 auto;
 }
 @media (min-width: 768px)
 {
+  .footer_logo
+  {
+    justify-content: center;
+  }
+
+  .footer_text
+  {
+    text-align: left;
+    padding-top: 3px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .footer_bar
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   .explore_menu
   {
     position: relative;
@@ -125,6 +178,7 @@ margin: 0 auto;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 40px;
 
   }
 
