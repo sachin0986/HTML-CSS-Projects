@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+
+
+/*navbar*/
+
+.navbar
+{
+  transition-duration: 0.5s;
+  background-color: #F9FaFc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 50px 0 rgba(0 0 0 / 25%);
+}
+
+a
+{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+.navbar_brand
+{
+    display: flex;
+    padding: 25px;
+    
+}
+.navbar_logo
+{
+    width: 100px;
+}
+.home
+{
+    box-sizing: inherit;
+    justify-content: right;
+    margin-right: 2.7em !important;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+/*intro section*/
+
+.intro
+{
+
+    align-items: center;
+    padding: 100px;
+    justify-content: center;
+    text-align: center;
+
+    background: rgb(255,255,255);
+background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 100%);
+}
+
+.intro_head
+{
+    color: #222222;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+.intro_text
+{
+    color: #999;
+    font-size: 22px;
+    font-weight: 300;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+/*card 1*/
+.protfolio_design{
+    display: flex;
+}
+
+.screen_img{
+    display: flex;
+    width: 600px;
+    height: auto;
+}
+
+/*connecton section*/
+
+.con_sec
+{
+    padding: 60px;
+    text-align: center;
+    
+}
+
+.hello
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: 800px;
+}
+
+.conn_text
+{
+    color: #999;
+    font-size: 22px;
+    font-weight: 300;
+
+}
+.g_mail
+{
+    padding: 20px;
+}
+
+/*footer section*/
+.footer_bar
+{
+
+        color: #555;
+        margin-top: 40px;
+        height: 80px;
+        text-align: center;
+        position: relative;
+        background: rgba(0, 0, 0, 0.05);
+}
+.footer_items
+{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.footer_links, .footer_text
+{
+    padding: 30px;
+}
+.link_din
+{
+    padding-right: 10px;
+}
+.link_logo, .git_logo
+{
+    height: 25px;
+    padding-right: 5px;
+}
